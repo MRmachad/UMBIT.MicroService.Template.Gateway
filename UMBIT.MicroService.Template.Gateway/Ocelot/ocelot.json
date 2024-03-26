@@ -10,8 +10,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 4500
+          "Host": "hello",
+          "Port": 8080
         }
       ],
       "DangerousAcceptAnyServerCertificateValidator": true,
@@ -27,8 +27,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 4500
+          "Host": "hello",
+          "Port": 8080
         }
       ],
       "DangerousAcceptAnyServerCertificateValidator": true,
@@ -47,7 +47,7 @@
         {
           "Name": "UMBIT.MicroService.Template",
           "Version": "v1",
-          "Url": "http://localhost:4500/swagger/v1/swagger.json"
+          "Url": "http://hello:8080/swagger/v1/swagger.json"
         }
       ]
     }

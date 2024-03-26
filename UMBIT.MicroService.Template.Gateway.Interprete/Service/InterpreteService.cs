@@ -122,8 +122,8 @@ namespace UMBIT.MicroService.Template.Gateway.Interprete.Service
                             {
                                 new DownstreamHostAndPort()
                                 {
-                                    Host = "localhost",
-                                    Port = 4500
+                                    Host = serviceSetting.Apelido,
+                                    Port = 8080
                                 }
                             };
 
@@ -149,7 +149,7 @@ namespace UMBIT.MicroService.Template.Gateway.Interprete.Service
                         {
                             Name = serviceSetting.ServiceName,
                             Version = "v1",
-                            Url = $"http://localhost:{serviceSetting.Port}/swagger/v1/swagger.json"
+                            Url = $"http://{serviceSetting.Apelido}:8080/swagger/v1/swagger.json"
                         }
                     }
                 });
