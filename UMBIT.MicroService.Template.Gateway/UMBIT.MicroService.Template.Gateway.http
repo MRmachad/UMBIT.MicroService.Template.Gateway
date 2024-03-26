@@ -1,0 +1,6 @@
+@UMBIT.MicroService.Template.Gateway_HostAddress = http://localhost:5189
+
+GET {{UMBIT.MicroService.Template.Gateway_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

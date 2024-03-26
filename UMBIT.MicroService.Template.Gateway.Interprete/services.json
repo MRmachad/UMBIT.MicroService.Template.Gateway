@@ -1,0 +1,9 @@
+{
+  "services": [
+    {
+      "serviceName": "UMBIT.MicroService.Template",
+      "apelido": "hello",
+      "port": 4500
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/HelloWorld",
+      "UpstreamPathTemplate": "/hello/HelloWorld",
+      "UpstreamHttpMethod": [
+        "get"
+      ],
+      "RouteIsCaseSensitive": false,
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4500
+        }
+      ],
+      "DangerousAcceptAnyServerCertificateValidator": true,
+      "SwaggerKey": "hello"
+    },
+    {
+      "DownstreamPathTemplate": "/WeatherForecast",
+      "UpstreamPathTemplate": "/hello/WeatherForecast",
+      "UpstreamHttpMethod": [
+        "get"
+      ],
+      "RouteIsCaseSensitive": false,
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4500
+        }
+      ],
+      "DangerousAcceptAnyServerCertificateValidator": true,
+      "SwaggerKey": "hello"
+    }
+  ],
+  "GlobalConfiguration": {
+    "RouteIsCaseSensitive": false,
+    "DangerousAcceptAnyServerCertificateValidator": true,
+    "BaseUrl": "http://localhost"
+  },
+  "SwaggerEndPoints": [
+    {
+      "Key": "hello",
+      "Config": [
+        {
+          "Name": "UMBIT.MicroService.Template",
+          "Version": "v1",
+          "Url": "http://localhost:4500/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}
